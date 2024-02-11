@@ -15,3 +15,4 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+new_mac = '.'.join(mac.split(:))
