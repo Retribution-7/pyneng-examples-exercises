@@ -16,3 +16,7 @@
 """
 
 nat = "ip nat inside source list ACL interface FastEthernet0/1 overload"
+nat_list = nat.split()
+new_nat = "".join(nat_list[:nat_list.index('FastEthernet0/1)'] + ['GigabitEthernet0/1'] + [nat_list[nat_list.index('FastEthernet0/1')+1:])
+print(new_nat)
+                                                                                           
